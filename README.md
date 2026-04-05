@@ -306,6 +306,9 @@ Para viviendas aisladas usar `--position I --agg ISOL_ISOL_ISOL`.
 - PNG con la curva base y la curva conservadora superpuestas
 - CSV con columnas `x`, `y_base`, `y_conservative`
 
+Para este ejemplo, la curva predicha (normal y conservadora) con su rango de incertidumbre es:
+![Curva predicha](experiments/exp05_p500/predictions/pred_2F-C-R-Y-ax1-ay1-3R11.2R11.1R11/plot.png) 
+
 ---
 
 ## Descripción del problema

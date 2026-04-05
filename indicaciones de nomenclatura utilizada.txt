@@ -1,0 +1,39 @@
+The dwellings studied in these files consist of "isolated dwellings" and "aggregate dwellings", where the aggregates are made up of three dwellings that are considered to be in left, centre and right positions as they are linear configurations. The structures consist of one-, two- and three-storey dwellings with a rigid inter-storey floor but a rigid or flexible roof, except for the single-storey dwelling (which only has a rigid floor). In addition, three types of asymmetry are considered with respect to the X and Y axes (direction of the aggregate). Therefore, the variables analysed are as follows:
+
+- Number of floors (1, 2 or 3)
+- Position in the aggregate (I (Isolated if applicable), L (left), C (centre) or R (right))
+- Type of roof diaphragm (R (rigid) or F (flexible))
+- Direction of analysis (X (x-axis) or Y (y-axis))
+- Level of asymmetry on the x-axis (1, 2 or 3, each being greater than the other in ascending order)
+- Level of asymmetry on the y-axis (1, 2 or 3, each being greater than the other in ascending order)
+
+The last indicator after the ‘-’ corresponds to the dwellings that make up the aggregate, where the most important variables for each one are indicated, i.e., the number of floors, the type of roof diaphragm, and the asymmetries on the X and Y axes, respectively.
+
+
+An example of the nomenclature is shown below:
+
+
+- Number of floors: 3
+- Position in the aggregate: left
+- Type of diaphragm on deck: flexible
+- Direction of analysis: Y-axis
+- X-axis asymmetry level: Asymmetry 1 (practically symmetrical)
+- Y-axis asymmetry level: Asymmetry 1 (practically symmetrical)
+
+Aggregate consisting of 3 dwellings in the following order from left to right:   3F11_3R11_2F13 (the dwelling on the left is the one we are defining with the above characteristics; in the centre there is a three-storey dwelling with a rigid roof diaphragm and asymmetry 1 on the x and y axes, and on the right there is a two-storey dwelling with a flexible roof diaphragm and asymmetry 1 on the x axis and asymmetry 3 on the y axis. Finally, the nomenclature of the dwelling defined above is as follows:
+
+
+
+
+3-L-F-Y-1-1-3F11_3R11_2F13
+
+And for the same dwelling as above, but in an isolated condition, the following applies:
+
+
+3-I-F-Y-1-1-ISOL_ISOL_ISOL
+
+
+In the above nomenclature, the left (L) position was replaced with the isolated (I) condition, and since the aggregate consists of only one dwelling, the last indicator is ISOL_ISOL_ISOL, indicating that the dwelling is isolated.
+
+
+

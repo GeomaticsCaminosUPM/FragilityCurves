@@ -60,8 +60,9 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 cd FragilityCurves
 
 # Crear entorno e instalar dependencias
-uv sync
+uv venv
 source .venv/bin/activate
+uv sync --active
 ```
 
 A partir de aquí, prefija cada comando con `uv run`:
@@ -104,11 +105,12 @@ Para viviendas aisladas el descriptor es `ISOL_ISOL_ISOL`.
 ---
 
 ## Paso 1 — Procesar los datos
+Las curvas definidas en los .txt no siempre tienen la misma longitud (cantidad de puntos `(X,Y)`). el script `dataset_processor.py` procesa los .txt y genera el dataset en formato .pt fijando la cantidad de puntos que deben tener las curvas. Lo que hace es calcular el rango de las `X`, generar los `n_points` puntos equiespaciados e interpolar el valor de las `Y`.
 
-Parsea los nombres de archivo, carga las curvas, las interpola a longitud fija y genera tensores PyTorch. Cada ejecución genera un archivo versionado según `--n_points` y actualiza `processed/datasets.json`.
+Este script por tanto parsea los nombres de archivo, carga las curvas, las interpola a longitud fija y genera tensores PyTorch. Cada ejecución genera un archivo versionado según `--n_points` y actualiza `processed/datasets.json`.
 
 ```bash
-uv run python dataset_processor.py \
+python3 dataset_processor.py \
     --data_dir . \
     --output_dir ./processed \
     --n_points 256
@@ -132,9 +134,11 @@ El script busca recursivamente en `Aggregate_dwellings/` e `Isolated_dwellings/`
 Para generar varias versiones y compararlas:
 
 ```bash
-uv run python dataset_processor.py --data_dir . --n_points 256
-uv run python dataset_processor.py --data_dir . --n_points 128
+python3 dataset_processor.py --data_dir . --n_points 256
+python3 dataset_processor.py --data_dir . --n_points 128
 ```
+
+> **Nota:** Ya se ha generado los datasets con 128, 256 y 500 puntos de interpolación. Está en el repo (mirar `processed/`). Si quieres crear el dataset con una cantidad diferente de puntos de interpolación, usa los comandos de arriba indicando otros `--n_points`. A menor puntos, menor *resolución* de curvas, pero más rápido es de entrenar el modelo.
 
 ---
 
@@ -145,7 +149,7 @@ El modelo usa **PCA + Gaussian Process Regression**: comprime cada curva en N co
 La evaluación se hace con **Leave-One-Out CV**: cada curva se predice sin haberla usado en el entrenamiento, lo que da la estimación más honesta posible con tan pocas muestras.
 
 ```bash
-uv run python gpr_model.py \
+python3 gpr_model.py \
     --exp_name exp01_baseline \
     --dataset ./processed/dataset_p256.pt \
     --n_components 15 \
@@ -169,44 +173,58 @@ Cada experimento se guarda en `./experiments/<exp_name>/`.
 
 Durante el LOO el modelo calcula cuánto sobreestima la predicción punto a punto. Si `--conservative_bias > 0`, resta ese bias observado más un margen fijo adicional, de modo que la curva predicha tienda a quedar por debajo de la real. La métrica `below%` indica el porcentaje de puntos donde la predicción conservadora queda por debajo de la curva real.
 
+> **Nota:** Esto lo hago porque Miguel me ha comentado que es más interesante que la curva predicha quede por debajo de la curva real, a que quede por arriba. Para un `conservative_bias = 0`, no se impone ese sesgo en el entrenamiento del modelo.
+
+
 ### Ejemplos de experimentos
 
 ```bash
 # Baseline sin corrección
-uv run python gpr_model.py --exp_name exp01_baseline \
+python3 gpr_model.py --exp_name exp01_baseline \
     --dataset ./processed/dataset_p256.pt \
-    --n_components 15 --conservative_bias 0
+    --n_components 5 --conservative_bias 0
 
 # Con corrección conservadora moderada
-uv run python gpr_model.py --exp_name exp02_conserv \
+python3 gpr_model.py --exp_name exp02_conserv \
     --dataset ./processed/dataset_p256.pt \
-    --n_components 15 --conservative_bias 0.05
+    --n_components 5 --conservative_bias 0.05
 
 # Más componentes PCA
-uv run python gpr_model.py --exp_name exp03_pca20 \
+python3 gpr_model.py --exp_name exp03_pca10 \
     --dataset ./processed/dataset_p256.pt \
-    --n_components 20 --conservative_bias 0.05
+    --n_components 10 --conservative_bias 0.05
 
 # Dataset con menos puntos
-uv run python gpr_model.py --exp_name exp04_p128 \
+python3 gpr_model.py --exp_name exp04_p128 \
     --dataset ./processed/dataset_p128.pt \
-    --n_components 15 --conservative_bias 0.05
+    --n_components 5 --conservative_bias 0.05
+
+# Dataset con más puntos
+python3 gpr_model.py --exp_name exp05_p500 \
+    --dataset ./processed/dataset_p500.pt \
+    --n_components 5 --conservative_bias 0.05
 ```
+
+> **Nota:** En mi portátil (un Thinkpad T480s con un i5-8350U) tarda 1 min. aprox. por cada entrenamiento. No usa GPU, solo CPU.
 
 ### Ver resumen comparativo de todos los experimentos
 
 ```bash
-uv run python gpr_model.py --summary
+python3 gpr_model.py --summary
 ```
 
-Muestra una tabla con R², RMSE, `below%` y el dataset usado para cada experimento:
+Muestra una tabla con `R²`, `RMSE`, `below%` y el dataset usado para cada experimento:
 
 ```
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 Experimento                  Dataset          n_comp   var%   bias      R²     RMSE  below%  R²_cons  below%_c
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-exp01_baseline               dataset_p256.pt      15   98.5  0.000  0.7949  0.16057    48.2   0.7949      48.2
-exp02_conserv                dataset_p256.pt      15   98.5  0.050  0.7949  0.16057    48.2   0.7321      71.5
+exp01_baseline               dataset_p256.pt       5   99.8  0.000  0.7949  0.16056    51.0   0.7949      51.0
+exp02_conserv                dataset_p256.pt       5   99.8  0.050  0.7949  0.16056    51.0   0.7755      72.1
+exp03_pca10                  dataset_p256.pt      10   99.9  0.050  0.7949  0.16057    51.1   0.7755      72.2
+exp04_p128                   dataset_p128.pt       5   99.8  0.050  0.7947  0.16042    51.0   0.7752      72.1
+exp05_p500                   dataset_p500.pt       5   99.8  0.050  0.7949  0.16067    51.0   0.7756      72.1
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 ```
 
 **Salida por experimento en `./experiments/<exp_name>/`:**
@@ -222,13 +240,13 @@ exp02_conserv                dataset_p256.pt      15   98.5  0.050  0.7949  0.16
 Una vez identificado un buen experimento, este script genera un análisis completo sobre todo el dataset: predicción, incertidumbre y comparación con la curva original para cada muestra.
 
 ```bash
-uv run python analyze_experiment.py --exp_name exp02_conserv
+python3 analyze_experiment.py --exp_name exp05_p500
 ```
 
-El dataset se lee automáticamente del `results.json` del experimento. Si fuera necesario indicarlo manualmente:
+El dataset se lee automáticamente del `results.json` del experimento. Si fuera necesario indicarlo manualmente, por ejemplo:
 
 ```bash
-uv run python analyze_experiment.py \
+python3 analyze_experiment.py \
     --exp_name exp02_conserv \
     --dataset ./processed/dataset_p256.pt
 ```
@@ -258,8 +276,8 @@ Cada plot muestra:
 Genera la curva para una combinación de parámetros no presente en el dataset.
 
 ```bash
-uv run python predict_gpr.py \
-    --exp_name exp02_conserv \
+python3 predict_gpr.py \
+    --exp_name exp05_p500 \
     --floors 2 \
     --position C \
     --diaphragm R \
@@ -292,7 +310,7 @@ Para viviendas aisladas usar `--position I --agg ISOL_ISOL_ISOL`.
 
 ## Descripción del problema
 
-**Tipo:** Regresión funcional — dado un vector de parámetros discretos/ordinales, el modelo predice una curva continua completa.
+**Tipo:** Regresión funcional: dado un vector de parámetros discretos/ordinales, el modelo predice una curva continua completa.
 
 **Features de entrada (27 dimensiones):**
 - Position one-hot `[I, L, C, R]` — 4 dims

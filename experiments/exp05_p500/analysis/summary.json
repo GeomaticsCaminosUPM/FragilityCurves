@@ -1,0 +1,767 @@
+{
+  "n_curves": 84,
+  "r2_mean": 0.8450576481380966,
+  "r2_min": -6.532797587064291,
+  "rmse_mean": 0.04630087063660456,
+  "rmse_max": 0.3447342090951272,
+  "pct_below_mean": 86.14761904761905,
+  "pct_below_min": 0.6,
+  "curves": [
+    {
+      "r2": 0.992566,
+      "rmse": 0.040579,
+      "mae": 0.032888,
+      "pct_below_conserv": 90.4,
+      "max_overestim_conserv": 0.029747,
+      "index": 0,
+      "filename": "1-C-R-Y-1-1-1R11_1R11_1R11.txt"
+    },
+    {
+      "r2": 0.966683,
+      "rmse": 0.083397,
+      "mae": 0.06514,
+      "pct_below_conserv": 45.8,
+      "max_overestim_conserv": 0.143279,
+      "index": 1,
+      "filename": "1-C-R-Y-1-1-1R11_1R11_3R11.txt"
+    },
+    {
+      "r2": 0.959644,
+      "rmse": 0.075491,
+      "mae": 0.055744,
+      "pct_below_conserv": 97.0,
+      "max_overestim_conserv": 0.017687,
+      "index": 2,
+      "filename": "1-C-R-Y-1-1-2R11_1R11_3R11.txt"
+    },
+    {
+      "r2": 0.924568,
+      "rmse": 0.087735,
+      "mae": 0.078412,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 3,
+      "filename": "1-C-R-Y-1-1-3R11_1R11_1R11.txt"
+    },
+    {
+      "r2": 0.953301,
+      "rmse": 0.069953,
+      "mae": 0.05687,
+      "pct_below_conserv": 48.4,
+      "max_overestim_conserv": 0.105202,
+      "index": 4,
+      "filename": "1-C-R-Y-1-1-3R11_1R11_2R11.txt"
+    },
+    {
+      "r2": 0.978656,
+      "rmse": 0.044198,
+      "mae": 0.036113,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 5,
+      "filename": "1-C-R-Y-1-1-3R11_1R11_3R11.txt"
+    },
+    {
+      "r2": 0.990988,
+      "rmse": 0.025612,
+      "mae": 0.02089,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 6,
+      "filename": "1-L-R-Y-1-1-1R11_1R11_1R11.txt"
+    },
+    {
+      "r2": 0.872502,
+      "rmse": 0.094381,
+      "mae": 0.090173,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 7,
+      "filename": "1-L-R-Y-1-1-1R11_1R11_3R11.txt"
+    },
+    {
+      "r2": 0.873159,
+      "rmse": 0.09442,
+      "mae": 0.084851,
+      "pct_below_conserv": 14.4,
+      "max_overestim_conserv": 0.148733,
+      "index": 8,
+      "filename": "1-L-R-Y-1-1-1R11_2R11_3R11.txt"
+    },
+    {
+      "r2": 0.989005,
+      "rmse": 0.028654,
+      "mae": 0.022308,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 9,
+      "filename": "1-L-R-Y-1-1-1R11_3R11_1R11.txt"
+    },
+    {
+      "r2": 0.991424,
+      "rmse": 0.025089,
+      "mae": 0.020407,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 10,
+      "filename": "1-L-R-Y-1-1-1R11_3R11_2R11.txt"
+    },
+    {
+      "r2": 0.986642,
+      "rmse": 0.031677,
+      "mae": 0.024369,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 11,
+      "filename": "1-L-R-Y-1-1-1R11_3R11_3R11.txt"
+    },
+    {
+      "r2": 0.941152,
+      "rmse": 0.096781,
+      "mae": 0.085129,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 12,
+      "filename": "1-R-R-Y-1-1-1R11_1R11_1R11.txt"
+    },
+    {
+      "r2": -6.532798,
+      "rmse": 0.344734,
+      "mae": 0.334884,
+      "pct_below_conserv": 0.6,
+      "max_overestim_conserv": 0.436256,
+      "index": 13,
+      "filename": "1-R-R-Y-1-1-1R11_3R11_1R11.txt"
+    },
+    {
+      "r2": 0.377228,
+      "rmse": 0.245137,
+      "mae": 0.237173,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 14,
+      "filename": "1-R-R-Y-1-1-2R11_3R11_1R11.txt"
+    },
+    {
+      "r2": 0.979529,
+      "rmse": 0.066791,
+      "mae": 0.058622,
+      "pct_below_conserv": 50.4,
+      "max_overestim_conserv": 0.074448,
+      "index": 15,
+      "filename": "1-R-R-Y-1-1-3R11_1R11_1R11.txt"
+    },
+    {
+      "r2": 0.974724,
+      "rmse": 0.055008,
+      "mae": 0.037754,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 16,
+      "filename": "1-R-R-Y-1-1-3R11_2R11_1R11.txt"
+    },
+    {
+      "r2": 0.989554,
+      "rmse": 0.030334,
+      "mae": 0.023979,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 17,
+      "filename": "1-R-R-Y-1-1-3R11_3R11_1R11.txt"
+    },
+    {
+      "r2": 0.964132,
+      "rmse": 0.045262,
+      "mae": 0.038549,
+      "pct_below_conserv": 81.6,
+      "max_overestim_conserv": 0.052193,
+      "index": 18,
+      "filename": "2-C-R-Y-1-1-1R11_2R11_3R11.txt"
+    },
+    {
+      "r2": 0.929647,
+      "rmse": 0.065185,
+      "mae": 0.051,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 19,
+      "filename": "2-C-R-Y-1-1-2R11_2R11_2R11.txt"
+    },
+    {
+      "r2": 0.978414,
+      "rmse": 0.036167,
+      "mae": 0.026197,
+      "pct_below_conserv": 99.2,
+      "max_overestim_conserv": 0.008105,
+      "index": 20,
+      "filename": "2-C-R-Y-1-1-2R11_2R11_3R11.txt"
+    },
+    {
+      "r2": 0.896675,
+      "rmse": 0.0709,
+      "mae": 0.065475,
+      "pct_below_conserv": 30.0,
+      "max_overestim_conserv": 0.100264,
+      "index": 21,
+      "filename": "2-C-R-Y-1-1-3R11_2R11_1R11.txt"
+    },
+    {
+      "r2": 0.988432,
+      "rmse": 0.024676,
+      "mae": 0.020755,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 22,
+      "filename": "2-C-R-Y-1-1-3R11_2R11_2R11.txt"
+    },
+    {
+      "r2": 0.993436,
+      "rmse": 0.019916,
+      "mae": 0.016179,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 23,
+      "filename": "2-C-R-Y-1-1-3R11_2R11_3R11.txt"
+    },
+    {
+      "r2": 0.979997,
+      "rmse": 0.0264,
+      "mae": 0.021486,
+      "pct_below_conserv": 84.2,
+      "max_overestim_conserv": 0.020226,
+      "index": 24,
+      "filename": "2-L-R-Y-1-1-2R11_1R11_3R11.txt"
+    },
+    {
+      "r2": 0.986427,
+      "rmse": 0.022484,
+      "mae": 0.019726,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 25,
+      "filename": "2-L-R-Y-1-1-2R11_2R11_2R11.txt"
+    },
+    {
+      "r2": 0.979544,
+      "rmse": 0.026524,
+      "mae": 0.021788,
+      "pct_below_conserv": 84.0,
+      "max_overestim_conserv": 0.014601,
+      "index": 26,
+      "filename": "2-L-R-Y-1-1-2R11_2R11_3R11.txt"
+    },
+    {
+      "r2": 0.888769,
+      "rmse": 0.058473,
+      "mae": 0.050899,
+      "pct_below_conserv": 42.8,
+      "max_overestim_conserv": 0.087641,
+      "index": 27,
+      "filename": "2-L-R-Y-1-1-2R11_3R11_1R11.txt"
+    },
+    {
+      "r2": 0.958686,
+      "rmse": 0.040248,
+      "mae": 0.031109,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 28,
+      "filename": "2-L-R-Y-1-1-2R11_3R11_2R11.txt"
+    },
+    {
+      "r2": 0.699865,
+      "rmse": 0.126704,
+      "mae": 0.12073,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 29,
+      "filename": "2-R-R-Y-1-1-1R11_3R11_2R11.txt"
+    },
+    {
+      "r2": 0.986433,
+      "rmse": 0.025781,
+      "mae": 0.022349,
+      "pct_below_conserv": 80.6,
+      "max_overestim_conserv": 0.009004,
+      "index": 30,
+      "filename": "2-R-R-Y-1-1-2R11_2R11_2R11.txt"
+    },
+    {
+      "r2": 0.975994,
+      "rmse": 0.03266,
+      "mae": 0.026931,
+      "pct_below_conserv": 85.4,
+      "max_overestim_conserv": 0.02298,
+      "index": 31,
+      "filename": "2-R-R-Y-1-1-2R11_3R11_2R11.txt"
+    },
+    {
+      "r2": 0.98915,
+      "rmse": 0.023906,
+      "mae": 0.020529,
+      "pct_below_conserv": 91.6,
+      "max_overestim_conserv": 0.021849,
+      "index": 32,
+      "filename": "2-R-R-Y-1-1-3R11_1R11_2R11.txt"
+    },
+    {
+      "r2": 0.953949,
+      "rmse": 0.046801,
+      "mae": 0.042172,
+      "pct_below_conserv": 64.8,
+      "max_overestim_conserv": 0.04649,
+      "index": 33,
+      "filename": "2-R-R-Y-1-1-3R11_2R11_2R11.txt"
+    },
+    {
+      "r2": 0.97634,
+      "rmse": 0.023965,
+      "mae": 0.021129,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 34,
+      "filename": "3-C-R-Y-1-1-1R11_3R11_1R11.txt"
+    },
+    {
+      "r2": 0.978789,
+      "rmse": 0.022144,
+      "mae": 0.019191,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 35,
+      "filename": "3-C-R-Y-1-1-1R11_3R11_2R11.txt"
+    },
+    {
+      "r2": 0.980677,
+      "rmse": 0.021303,
+      "mae": 0.017222,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 36,
+      "filename": "3-C-R-Y-1-1-1R11_3R11_3R11.txt"
+    },
+    {
+      "r2": 0.953255,
+      "rmse": 0.036176,
+      "mae": 0.028328,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 37,
+      "filename": "3-C-R-Y-1-1-2R11_3R11_1R11.txt"
+    },
+    {
+      "r2": 0.934348,
+      "rmse": 0.043367,
+      "mae": 0.035484,
+      "pct_below_conserv": 77.6,
+      "max_overestim_conserv": 0.072027,
+      "index": 38,
+      "filename": "3-C-R-Y-1-1-2R11_3R11_2R11.txt"
+    },
+    {
+      "r2": 0.992385,
+      "rmse": 0.013796,
+      "mae": 0.011059,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 39,
+      "filename": "3-C-R-Y-1-1-3R11_3R11_1R11.txt"
+    },
+    {
+      "r2": 0.986256,
+      "rmse": 0.020898,
+      "mae": 0.016741,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 40,
+      "filename": "3-C-R-Y-1-1-3R11_3R11_3R11.txt"
+    },
+    {
+      "r2": 0.95206,
+      "rmse": 0.028816,
+      "mae": 0.027382,
+      "pct_below_conserv": 88.6,
+      "max_overestim_conserv": 0.006578,
+      "index": 41,
+      "filename": "3-L-R-Y-1-1-3R11_1R11_1R11.txt"
+    },
+    {
+      "r2": 0.996687,
+      "rmse": 0.00807,
+      "mae": 0.006412,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 42,
+      "filename": "3-L-R-Y-1-1-3R11_1R11_2R11.txt"
+    },
+    {
+      "r2": 0.988625,
+      "rmse": 0.014439,
+      "mae": 0.012823,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 43,
+      "filename": "3-L-R-Y-1-1-3R11_1R11_3R11.txt"
+    },
+    {
+      "r2": 0.986872,
+      "rmse": 0.016245,
+      "mae": 0.014041,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 44,
+      "filename": "3-L-R-Y-1-1-3R11_2R11_1R11.txt"
+    },
+    {
+      "r2": 0.974602,
+      "rmse": 0.021761,
+      "mae": 0.01799,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 45,
+      "filename": "3-L-R-Y-1-1-3R11_2R11_2R11.txt"
+    },
+    {
+      "r2": 0.991528,
+      "rmse": 0.012594,
+      "mae": 0.010747,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 46,
+      "filename": "3-L-R-Y-1-1-3R11_2R11_3R11.txt"
+    },
+    {
+      "r2": 0.988779,
+      "rmse": 0.014564,
+      "mae": 0.010997,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 47,
+      "filename": "3-L-R-Y-1-1-3R11_3R11_1R11.txt"
+    },
+    {
+      "r2": 0.989948,
+      "rmse": 0.013384,
+      "mae": 0.010334,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 48,
+      "filename": "3-L-R-Y-1-1-3R11_3R11_3R11.txt"
+    },
+    {
+      "r2": 0.950477,
+      "rmse": 0.032113,
+      "mae": 0.025192,
+      "pct_below_conserv": 92.4,
+      "max_overestim_conserv": 0.045377,
+      "index": 49,
+      "filename": "3-R-R-Y-1-1-1R11_1R11_3R11.txt"
+    },
+    {
+      "r2": 0.974002,
+      "rmse": 0.026832,
+      "mae": 0.022352,
+      "pct_below_conserv": 94.6,
+      "max_overestim_conserv": 0.014527,
+      "index": 50,
+      "filename": "3-R-R-Y-1-1-1R11_2R11_3R11.txt"
+    },
+    {
+      "r2": 0.988787,
+      "rmse": 0.016494,
+      "mae": 0.014689,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 51,
+      "filename": "3-R-R-Y-1-1-1R11_3R11_3R11.txt"
+    },
+    {
+      "r2": 0.993874,
+      "rmse": 0.012214,
+      "mae": 0.009736,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 52,
+      "filename": "3-R-R-Y-1-1-2R11_1R11_3R11.txt"
+    },
+    {
+      "r2": 0.988379,
+      "rmse": 0.016914,
+      "mae": 0.013441,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 53,
+      "filename": "3-R-R-Y-1-1-2R11_2R11_3R11.txt"
+    },
+    {
+      "r2": 0.984448,
+      "rmse": 0.019414,
+      "mae": 0.016372,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 54,
+      "filename": "3-R-R-Y-1-1-3R11_1R11_3R11.txt"
+    },
+    {
+      "r2": 0.983666,
+      "rmse": 0.020023,
+      "mae": 0.017088,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 55,
+      "filename": "3-R-R-Y-1-1-3R11_2R11_3R11.txt"
+    },
+    {
+      "r2": 0.963636,
+      "rmse": 0.029332,
+      "mae": 0.024698,
+      "pct_below_conserv": 91.8,
+      "max_overestim_conserv": 0.012066,
+      "index": 56,
+      "filename": "3-R-R-Y-1-1-3R11_3R11_3R11.txt"
+    },
+    {
+      "r2": 0.955584,
+      "rmse": 0.062211,
+      "mae": 0.051931,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 57,
+      "filename": "1-I-R-Y-1-1-ISOL_ISOL_ISOL.txt"
+    },
+    {
+      "r2": 0.979554,
+      "rmse": 0.039674,
+      "mae": 0.033081,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 58,
+      "filename": "1-I-R-Y-1-3-ISOL_ISOL_ISOL.txt"
+    },
+    {
+      "r2": 0.928566,
+      "rmse": 0.06765,
+      "mae": 0.062541,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 59,
+      "filename": "1-I-R-Y-1-5-ISOL_ISOL_ISOL.txt"
+    },
+    {
+      "r2": 0.962121,
+      "rmse": 0.053501,
+      "mae": 0.049522,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 60,
+      "filename": "1-I-R-Y-3-1-ISOL_ISOL_ISOL.txt"
+    },
+    {
+      "r2": 0.994155,
+      "rmse": 0.019972,
+      "mae": 0.014753,
+      "pct_below_conserv": 98.6,
+      "max_overestim_conserv": 0.009389,
+      "index": 61,
+      "filename": "1-I-R-Y-3-3-ISOL_ISOL_ISOL.txt"
+    },
+    {
+      "r2": 0.976306,
+      "rmse": 0.037237,
+      "mae": 0.033466,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 62,
+      "filename": "1-I-R-Y-3-5-ISOL_ISOL_ISOL.txt"
+    },
+    {
+      "r2": 0.95217,
+      "rmse": 0.072591,
+      "mae": 0.064462,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 63,
+      "filename": "1-I-R-Y-5-1-ISOL_ISOL_ISOL.txt"
+    },
+    {
+      "r2": 0.975261,
+      "rmse": 0.047046,
+      "mae": 0.042083,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 64,
+      "filename": "1-I-R-Y-5-3-ISOL_ISOL_ISOL.txt"
+    },
+    {
+      "r2": 0.922796,
+      "rmse": 0.078994,
+      "mae": 0.074974,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 65,
+      "filename": "1-I-R-Y-5-5-ISOL_ISOL_ISOL.txt"
+    },
+    {
+      "r2": 0.733523,
+      "rmse": 0.061212,
+      "mae": 0.056069,
+      "pct_below_conserv": 48.4,
+      "max_overestim_conserv": 0.078999,
+      "index": 66,
+      "filename": "2-I-R-Y-1-1-ISOL_ISOL_ISOL.txt"
+    },
+    {
+      "r2": 0.853976,
+      "rmse": 0.044167,
+      "mae": 0.039685,
+      "pct_below_conserv": 66.2,
+      "max_overestim_conserv": 0.049319,
+      "index": 67,
+      "filename": "2-I-R-Y-1-3-ISOL_ISOL_ISOL.txt"
+    },
+    {
+      "r2": 0.686968,
+      "rmse": 0.063102,
+      "mae": 0.058606,
+      "pct_below_conserv": 36.4,
+      "max_overestim_conserv": 0.068424,
+      "index": 68,
+      "filename": "2-I-R-Y-1-5-ISOL_ISOL_ISOL.txt"
+    },
+    {
+      "r2": 0.7857,
+      "rmse": 0.058897,
+      "mae": 0.05605,
+      "pct_below_conserv": 39.0,
+      "max_overestim_conserv": 0.063312,
+      "index": 69,
+      "filename": "2-I-R-Y-3-1-ISOL_ISOL_ISOL.txt"
+    },
+    {
+      "r2": 0.903624,
+      "rmse": 0.03857,
+      "mae": 0.036826,
+      "pct_below_conserv": 75.6,
+      "max_overestim_conserv": 0.029625,
+      "index": 70,
+      "filename": "2-I-R-Y-3-3-ISOL_ISOL_ISOL.txt"
+    },
+    {
+      "r2": 0.809941,
+      "rmse": 0.053009,
+      "mae": 0.050329,
+      "pct_below_conserv": 57.4,
+      "max_overestim_conserv": 0.052545,
+      "index": 71,
+      "filename": "2-I-R-Y-3-5-ISOL_ISOL_ISOL.txt"
+    },
+    {
+      "r2": 0.750923,
+      "rmse": 0.072353,
+      "mae": 0.068079,
+      "pct_below_conserv": 22.2,
+      "max_overestim_conserv": 0.08897,
+      "index": 72,
+      "filename": "2-I-R-Y-5-1-ISOL_ISOL_ISOL.txt"
+    },
+    {
+      "r2": 0.819248,
+      "rmse": 0.05822,
+      "mae": 0.054679,
+      "pct_below_conserv": 47.6,
+      "max_overestim_conserv": 0.065815,
+      "index": 73,
+      "filename": "2-I-R-Y-5-3-ISOL_ISOL_ISOL.txt"
+    },
+    {
+      "r2": 0.701827,
+      "rmse": 0.074221,
+      "mae": 0.071599,
+      "pct_below_conserv": 8.8,
+      "max_overestim_conserv": 0.076929,
+      "index": 74,
+      "filename": "2-I-R-Y-5-5-ISOL_ISOL_ISOL.txt"
+    },
+    {
+      "r2": 0.985824,
+      "rmse": 0.009964,
+      "mae": 0.007935,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 75,
+      "filename": "3-I-R-Y-1-1-ISOL_ISOL_ISOL.txt"
+    },
+    {
+      "r2": 0.928427,
+      "rmse": 0.021964,
+      "mae": 0.019662,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 76,
+      "filename": "3-I-R-Y-1-3-ISOL_ISOL_ISOL.txt"
+    },
+    {
+      "r2": 0.987101,
+      "rmse": 0.009149,
+      "mae": 0.007842,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 77,
+      "filename": "3-I-R-Y-1-5-ISOL_ISOL_ISOL.txt"
+    },
+    {
+      "r2": 0.936277,
+      "rmse": 0.022964,
+      "mae": 0.021688,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 78,
+      "filename": "3-I-R-Y-3-1-ISOL_ISOL_ISOL.txt"
+    },
+    {
+      "r2": 0.728109,
+      "rmse": 0.047047,
+      "mae": 0.045847,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 79,
+      "filename": "3-I-R-Y-3-3-ISOL_ISOL_ISOL.txt"
+    },
+    {
+      "r2": 0.936107,
+      "rmse": 0.02258,
+      "mae": 0.021644,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 80,
+      "filename": "3-I-R-Y-3-5-ISOL_ISOL_ISOL.txt"
+    },
+    {
+      "r2": 0.99429,
+      "rmse": 0.0077,
+      "mae": 0.006123,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 81,
+      "filename": "3-I-R-Y-5-1-ISOL_ISOL_ISOL.txt"
+    },
+    {
+      "r2": 0.942967,
+      "rmse": 0.022875,
+      "mae": 0.021217,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 82,
+      "filename": "3-I-R-Y-5-3-ISOL_ISOL_ISOL.txt"
+    },
+    {
+      "r2": 0.996999,
+      "rmse": 0.005483,
+      "mae": 0.00413,
+      "pct_below_conserv": 100.0,
+      "max_overestim_conserv": 0.0,
+      "index": 83,
+      "filename": "3-I-R-Y-5-5-ISOL_ISOL_ISOL.txt"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "exp_name": "exp01_baseline",
+  "timestamp": "2026-04-05T14:07:59.064585",
+  "dataset": "./processed/dataset_p256.pt",
+  "dataset_file": "dataset_p256.pt",
+  "n_components": 5,
+  "var_explained_pct": 99.793,
+  "matern_nu": 2.5,
+  "n_restarts": 5,
+  "conservative_bias": 0.0,
+  "bias_correction_factor": 1.0,
+  "metrics_no_bias": {
+    "r2": 0.794898,
+    "rmse": 0.16056,
+    "mae": 0.096589,
+    "pct_below": 50.967262
+  },
+  "metrics_conserv": {
+    "r2": 0.794898,
+    "rmse": 0.16056,
+    "mae": 0.096589,
+    "pct_below": 50.967262
+  }
+}
